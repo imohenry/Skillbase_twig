@@ -1,0 +1,1432 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        {# <div class="tiny-heading-container">
+            <p class="cdpe_tiny_heading data-science-tiny-heading">
+                Data Science
+            </p>
+        </div> #}
+
+        <p class="cdpe-main_heading">
+           Postilion Payments Basic Training
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+                Microsoft Business Intelligence End to End With SQL Server 2016
+            </p>
+
+            <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+            <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+                <!-- POPUP form -->
+                <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" class="formContainer" id="popForm" method="post">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                              <div class="form-group">
+                        <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="firstName" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="lastName" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                            <input class="form-control tel" id="phoneNumber" type="number" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Gender <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" id="industry" type="text" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control c-title" type="text" id="courseTitle" value="Postilion Payments Basic Training" readonly/>
+                        </div>
+                    
+                        <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+               <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    Postilion Basic Training focuses on the 
+                    tasks that operators and administrators 
+                    are required to carry out regularly. These 
+                    include monitoring the system, preforming 
+                    queries, maintenance operations, and 
+                    first-level troubleshooting. The course 
+                    does not deal with how to perform 
+                    installation or initial configuration, as 
+                    these are tasks that are typically 
+                    performed by Postilion engineers.
+                </p>
+
+                <!-- <p class="about-course-paragraph">
+                    In this course, you will have the opportunity to learn everything on digital payments from industry and subject matter experts.
+                    This course covers the fundamentals payment architecture, platform, their operations, switching and communications protocols used for recognizing transactions, 
+                    and how the worlds of FinTech and new technologies such as Tokenization and Blockchain provides a new outlook in payments
+                </p> -->
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <p class="about-course-paragraph">
+                    This course is aimed at anyone who 
+                    operates or administers a Postilion 
+                    payments system. The core modules are 
+                    generic in nature and are applicable to 
+                    any EFT environment. The elective 
+                    modules are tailored to specific 
+                    environments, for example, retail point of-sale in the case of the eSocket.POS 
+                    module.
+            </p>
+
+                <!-- <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Administering databases
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing logical database schema solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining high-availability solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Automating administrative tasks
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining security solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Monitoring and troubleshooting the database server
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing and executing deployments
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining the infrastructure (storage, hardware, and number of servers or instances, etc.)
+                    </li>
+                </ul> -->
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                        <p class="course-content-item sub-pad">
+                          <strong> Module 1:  EFT Overview </strong> 
+                         </p>
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Introduction to Payments Basic Training
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Introduction
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Point-of-sale environment
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    ATM environment
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Cards and routing
+                                </li>
+
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Payment cycle
+                                </li>
+
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Basic Postilion payments terminology
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    EFT protocols
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- sub-Module -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Payments system overview
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Postilion Payments product family
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Postilion Payments solutions
+                              </li>
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 2 -->
+                    <p class="course-content-item sub-pad">
+                      <strong>  Module 2:  Realtime </strong>
+                     </p>
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Introducing Realtime
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Architecture
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Transaction Manager
+                                </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Getting started
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Training scenario
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Services
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Application security
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Realtime Management console
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Configuration
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuration consoles
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                    <!-- sub -->
+                    <div class="drop-container">
+                    <div class="label">
+                        <p class="course-contents_heading days-flex">
+                            Monitoring                       
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Realtime Monitor
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- sub -->
+                    <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Querying
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Transaction query
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Cards query
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Audit query
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+
+                <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Maintenance tasks
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Checking system resources
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        SQL server database tasks
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Changing the PAN encryption key
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>  
+
+                         <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Troubleshooting and support
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Sources of information
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Support framework
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>   
+
+                       <!-- Module 3 -->
+                       <p class="course-content-item sub-pad">
+                        <strong> Module 3:  PostCard </strong>
+                       </p>
+
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                   PostCard Overview
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Introduction
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        PostCard concepts
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Functionality overview
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Regulatory and industry compliance
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                         <!-- sub-->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Getting started
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Training scenario
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Services
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Accessing PostCard
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Scheduled jobs
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Card, account, and customer inquiries
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Documentation
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Validation services
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Introduction
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Checking card status
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Checking whether the card is on hold
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Checking whether the account is on hold
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Expiry date checking
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        PIN verification
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Card verification
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        EMV authentication
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Validation data matching
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Track 2 value matching
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Address verification service
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Retrieving linked accounts
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Velocity checking
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                         <!-- sub -->
+                         <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Risk management
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Risk management
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                         <!-- sub -->
+                         <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Authorization services
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Overview
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Transaction processing
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Synchronizing information
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Monitoring and troubleshooting
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Realtime Monitor
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Tracing
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Module 4 -->
+                       <p class="course-content-item sub-pad">
+                        <strong> Module 4: Office </strong>
+                       </p>
+
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Overview
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Office architecture
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Office application security
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Getting started
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Training scenario
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Office services
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Office Management console
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Scheduling jobs
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Running Normalization
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Monitoring processes
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Querying transactions
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                         <!-- sub -->
+                         <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Extracting data
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Extract plug-ins
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Extract jobs
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Querying extract results
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                         <!-- sub -->
+                         <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Reconciliation
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Introduction
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Recon plug-ins
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Recon jobs
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Querying recon results
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                         <!-- sub -->
+                         <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Reports
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        On-demand reports
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Scheduled reports
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Module 5 -->
+                        <p class="course-content-item sub-pad">
+                            <strong> Module 5: ATM Driving </strong>
+                           </p>
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    ATM-driving overview
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ATM processing environment
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Basic ATM concepts
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    ATM-driving framework
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Self-Service Framework
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ATM-driving interfaces
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                            <!-- sub -->
+                            <div class="drop-container">
+                                <div class="label">
+                                    <p class="course-contents_heading days-flex">
+                                        Introduction to AtmApp
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </p>
+                                </div>
+                                <div class="content">
+                                    <ul class="about-course-list list-alt-pad">
+                                        <li class="about-course-list-child child-pad">
+                                            <i class="bi bi-circle"></i>
+                                            Fundamental AtmApp Concepts
+                                        </li>
+                                        <li class="about-course-list-child child-pad">
+                                            <i class="bi bi-circle"></i>
+                                            AtmApp Features
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                                <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Taking an ATM into service
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Realtime Management Console
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Required Preconfiguration
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Configuring a New Terminal
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Entering Service Sequence
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Daily ATM-driving operations
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Monitoring Terminals
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Using ATM Commander
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Batches and Cutovers
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ATM Reports
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Troubleshooting
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Support Cards Rejected
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Transactions Consistently Fail
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ATM Does Not Take a Load
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Configuration Changes Do Not Take Effect
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Problems Experienced with Dispensing and Cassette Configuration
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Problems Experienced with ATM Balancing
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        AtmApp Cannot Process Messages Received from the ATM
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Module 6 -->
+                        <p class="course-content-item sub-pad">
+                            <strong> Module 6: eSocket.POS </strong>
+                           </p>
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Getting started
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Postilion retail payments system overview
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        eSocket.POS functionality
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        System architecture
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Training scenario
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ConfigServer Management Console
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Configuring base settings
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ConfigServer Base Console
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Configuring account types
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Configuring currencies
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Configuring countries and regions
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Configuring system properties
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub -->
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Configuring card products
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ConfigServer Cards Console
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding stand-in limits
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding limits classes
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding account profiles
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding card types
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding card products
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding card sets
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        EMV card parameters
+                                    </li>
+
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub --> 
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Configuring software components
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        ConfigServer Software Components Console
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Defining devices
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Modifying pipeline components
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Defining custom classes
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Defining source entities
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Defining sink entities
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Defining custom parameters
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- sub --> 
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Configuring terminal profiles
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Accessing the Store and Terminal Configuration Console
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding a terminal profile
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Associating software components
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding merchandise profiles
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding lane profiles
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Adding connection types
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- sub --> 
+                        <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Troubleshooting
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Troubleshooting tools
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Troubleshooting Config Agent
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Troubleshooting ConfigServer
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Troubleshooting the eSocket.POS machine
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Module 7 --> 
+                        <p class="course-content-item sub-pad">
+                            <strong> Module 7: TermApp</strong>
+                        </p>
+                        <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Overview
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Architecture
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Features and Functions
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Benefits
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- sub --> 
+                    <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Adding terminals
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Training scenario
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Terminal Management
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Realtime configuration
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    TermApp.Framework configuration
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!-- sub --> 
+                     <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Messages between terminals and TermApp
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Key exchanges
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    File action requests
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Financial transactions
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Terminal reconciliation messages
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!-- sub --> 
+                     <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Terminal monitoring
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Realtime Monitor
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Terminals Monitor
+                                    
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    TermApp commands
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!-- sub --> 
+                     <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Daily POS-driving operations
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Failed transactions
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Terminals reports
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N450,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: Instructor-led, practical (lab-based).
+                    </li>
+
+                    {# <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Building 7a, Oko Awo Close, Victoria Island, Lagos
+                    </li> #}
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 4-7 days, depending on the elective 
+                        modules included
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Participant workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Presentation
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Virtual machine training environment
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Evaluation
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+       {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

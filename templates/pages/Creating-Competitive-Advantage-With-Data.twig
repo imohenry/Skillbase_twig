@@ -1,0 +1,517 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading">
+                Digital Payments, Data and Fintech
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+            Creating Competitive Advantage With Data in Africa's Digital Economy
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+                Creating Competitive Advantage With Data in Africa's Digital Economy
+            </p>
+
+            <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+     <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+
+            <!-- POPUP form -->
+            <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" id="popForm" method="post" class="formContainer" enctype="multipart/form-data">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                    <div class="form-group">
+                        <span class="input_placeholder">First Name </span>
+                           <input type="text" class="form-control" id="firstName" value="" required/>
+                       </div>
+                       <div class="form-group">
+                           <span class="input_placeholder">Last Name</span>
+                           <input type="text" class="form-control" id="lastName" name="name" required/>
+                       </div>
+                       <div class="form-group">
+                            <span class="input_placeholder">Email Address</span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                       <div class="form-group">
+                           <span class="input_placeholder">Phone Number </span>
+                           <input class="form-control " id="phoneNumber" type="number" value=""/>
+                       </div>
+                       <div class="form-group">
+                            <span class="input_placeholder">Gender</span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="industry" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control tel c-title" id="courseTitle" type="text" value="Creating Competitive Advantage With Data in Africa's Digital Economy" readonly/>
+                        </div>
+                   
+                       <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+        <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    In Africa today, digital disruption continues to
+                    reshape financial industries, and businesses
+                    are waking up to the immense value and
+                    potential risk that data and other external
+                    factors brings to their digital business. In
+                    addition, competitive forces driving Digital
+                    Transformation strategies hamper companies
+                    from realizing the full value from their digital
+                    initiatives.
+                </p>
+
+                <p class="about-course-paragraph">
+                    This program provides the floor to discuss
+                    collectively, strategize, and gain actionable
+                    frameworks to not only drive organizational
+                    digital strategy, but also to envision next-generation innovation strategies for
+                    sustainable growth in your organization and
+                    in Africa as a whole.
+                </p>
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <!-- <p class="about-course-paragraph">
+                    The primary audience of this course is IT professionals who design and maintain SQL Server databases. The audience can also comprise technical architects and consultants who design and implement SQL Server solutions. Students taking this course are expected to have three or more years of experience working on databases for two or more of the following phases in the product lifecycle - design, development, deployment, optimization, maintenance, or support. 
+                    <br> <br>
+                    Students should have experience in the following areas:
+                </p> -->
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Thought leaders for business leaders, senior managers or entrepreneurs in charge of
+                        developing or implementing a digital business transformation strategy.
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Mid-to senior-level executives, including senior leaders, business owners, managing
+                        directors, regional directors, and those in the fields of business development, innovation,
+                        digital, R&D, and operations.                        
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Group Heads leading digital business and transformation in the Digital Business Team,
+                        Data Team, Card Business, Operations Team, Internal Control, Merchant System
+                        Operations, Engineering, Issuer/Processor Operations, Engineering
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Fraud Analysis personnel, Internal Control, Risk Management Personnel
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        System Architects and Developers
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Product Development and Product Marketing
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        FinTech and Corporate organisations
+                        undergoing Digital Transformation
+                    </li>
+
+                </ul>
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 1: The Role of Leaders in Executing and Sustaining
+                                Digital Transformation
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Dynamics of Digital Disruption and Transformation
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Challenges facing the Digital Business Transformation Journey In Africa - The workforce and the environment
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Competitive Forces Driving and shaping the Digital Landscape in Africa
+                                </li>
+
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    How digital technologies impact every industry ecosystem (Financial Institutions, Government)
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- Module 2 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 2: Technology Innovations And Trends Fuelling Innovation
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              The most interesting and promising Fintech ideas shaping Banking
+                              & Financial Services
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Optimising AI in Retail Banking, Lending and the Payments Landscape
+                            </li>
+                             <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Optimising consumer expenses, credit decisioning and delivering to customer aspirations: Customer-centric Relationship Management
+
+                            </li>
+                              
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 3 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 3: Leveraging Data as a Competitive Asset in
+                                Digital Transformation                                
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Digital Strategy: Building the Data Journey
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Creating Competitive Advantage With Data In Our Digital
+                                    Economy
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Digital Strategy: Data Platforms and Ecosystems
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Leveraging analytics for greater market intelligence and scalable decision making (Artificial Intelligence and New Analytical methods)
+
+                                </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Module 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 4: Leveraging Digital Capabilities for Competitive
+                                Advantage
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Customer needs at the heart of digital services - Adopting the Design Thinking Methodology
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Digital Skills required for the Future - Evaluating The Gartner Digital Execution Scorecard
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 5: Enabling business opportunities by leveraging
+                                Innovation, Digital platforms, and Big data
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Defining a Data Governance framework to improve data
+                                    initiatives on Payment Products                                    
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Developing a Data Strategy - Monetization of Data across Payment Products
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Data, Digital Strategy Execution and the Future: In Service,
+                                    Channel, and Experience delivery
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                    <!-- Module 6 -->
+                    <div class="drop-container">
+                    <div class="label">
+                        <p class="course-contents_heading days-flex">
+                            Module 6: The Digital Leader - Adopting a Digital Mindset                         
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Strategic Initiatives worth driving in 2023
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Module 7 -->
+                    <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Case Studies & Capstone Project
+                               
+                            </p>
+                        </div>
+                       
+                        </div>
+
+                <!-- Module 8 -->
+                        <!-- <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Module 8: The Scrum Ceremonies / Meetings
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Learn the duration, purpose, and invitees, for each meeting
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        The Sprint Planning Meeting (part 1 and part 2)
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        The value and purpose of a Daily Scrum
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Sprint Review (or Demo); how it is conducted and the benefit
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Sprint Retrospective; the meeting that will take the team to the next level
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>   -->
+
+                         <!-- Module 9 -->
+                        <!-- <div class="drop-container">
+                            <div class="label">
+                                <p class="course-contents_heading days-flex">
+                                    Module 9: The Scrum Artifacts/Documents
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                            </div>
+                            <div class="content">
+                                <ul class="about-course-list list-alt-pad">
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        The Product Backlog and who owns it
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        The Sprint Backlog and how it differs from the Product Backlog
+                                    </li>
+                                    <li class="about-course-list-child child-pad">
+                                        <i class="bi bi-circle"></i>
+                                        Burn down and Burn up charts and the story they tell
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>    -->
+               
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: NGN1,750,000 per participant.
+                    </li>
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Nairobi, Kenya
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: On-site
+                    </li>
+
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Building 7a, Oko Awo Close, Victoria Island, Lagos
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 5 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Hands-on experience with examples and case studies
+                    </li>
+
+                    <!-- <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li> -->
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+       {% include 'layouts/bank_logos' %}
+          {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

@@ -1,0 +1,733 @@
+{% extends 'layouts/courses' %}
+
+
+{% block content %}
+
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading">
+                Digital Payments, Data and Fintech
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+             Risk and Compliance on Electronic Payments Systems
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+                Risk and Compliance on Electronic Payments Systems
+            </p>
+
+            <p class="course-content-item up-pad">
+                Goal of The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+
+            {# <p class="course-content-item">
+                <a href="#to-prerequisites">Prerequisites </a> 
+             </p> #}
+             <button class="register-btn" onclick ="openForm()">
+                    Register Now
+            </button>
+
+            <!-- POPUP form -->
+            
+            <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" id="popForm" method="post" class="formContainer" enctype="multipart/form-data">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                    <div class="form-group">
+                        <span class="input_placeholder">First Name </span>
+                           <input type="text" class="form-control" id="firstName" value="" required/>
+                       </div>
+                       <div class="form-group">
+                           <span class="input_placeholder">Last Name</span>
+                           <input type="text" class="form-control" id="lastName" name="name" required/>
+                       </div>
+                       <div class="form-group">
+                            <span class="input_placeholder">Email Address</span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                       <div class="form-group">
+                           <span class="input_placeholder">Phone Number </span>
+                           <input class="form-control " id="phoneNumber" type="number" value=""/>
+                       </div>
+                       <div class="form-group">
+                            <span class="input_placeholder">Gender</span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="industry" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control tel c-title" type="text" id="courseTitle" value="Risk and Compliance on Electronic Payments Systems" readonly/>
+                        </div>
+                   
+                       <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                       </div>
+                    </form>
+            </div>
+        </div> 
+
+         <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    Goal of this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    For Risk and Compliance professionals, meeting management's expectation can sometimes be a huge task, most especially when expectations exceed the team's capability to deliver, thereby resulting in disappointing outcomes.
+                </p>
+                <p class="about-course-paragraph">
+                    This program is designed to bridge knowledge gap and provide participants with better understanding 
+                    of the regulatory compliance needs, potential risks and important stakeholders in the payments industry. The goal of this course is to provide participants with knowledge and skills that can immediately be used upon return to the organization.
+                </p>
+                <p class="about-course-paragraph">
+                    In an era where support functions are mostly seen as mere cost centers in an organisation, participants will 
+                    learn to appreciate the extent to which Risk and Compliance functions can positively impact the organization’s bottom-line through effective Risk-Based management approach.
+                </p>
+
+               
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <!-- <p class="about-course-paragraph">
+                    The Payments Specialized Training: AtmApp course is aimed at anyone who will be responsible for adding or modifying ATM-related information such as new terminals and downloads on a Postilion Payments system with AtmApp. 
+                    This includes anyone responsible for the deployment of ATMs on a payments system with AtmApp.
+                </p> -->
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Compliance Officers/Managers
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Risk Officers/Managers
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Chief Audit Executives
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Audit Directors
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Audit managers and Team Leads
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Key individuals
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Business Development Executives
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Anyone who is responsible for risk and compliance affairs or regulatory relationships
+                    </li>
+                </ul>
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 1: Compliance Risk Management
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Compliance
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Role of Compliance
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Levels of Compliance Risk Management
+                                </li>
+
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 2 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 2: Anti-Money Laundering and Counter Financing of Terrorism, Counter Proliferation Financing
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Definition (ML/TF/CPF)
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Three (3) Stages of Money Laundering
+                              </li>
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Comparison between ML, TF and PF
+                              </li>
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                What Legislation Exist in Nigeria to Address ML/TF/PF?
+                              </li>
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                The Financial Action Task Force (FATF) -FATF Standards
+                              </li>
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                AML/CFT/CPF trends and challenges today
+                              </li>
+
+                            <!-- <li class="about-course-list-child child-pad sub-pad">
+                                <i class="bi bi-circle"></i>
+                                Managing download applications, loadset groups, and loadsets
+                            </li>
+                            <ul class="drop-sub-text">
+                                <li>
+                                    Exporting and importing download applications
+                                </li>
+                                <li>
+                                    Adding and editing loadset groups
+                                </li>
+                                <li>
+                                    Configuring device-dependent downloads
+                                </li>
+                            </ul> -->
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 3 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 3: Compliance Programme
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Pillars of Compliance
+                                </li>
+                                
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Elements of an Effective Compliance Programme
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Elements of an AML/CFT Programme
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Customer Due Diligence
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Monitoring/Reporting
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    What Are Suspicious Transactions / Activities?
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    KYC Principles
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Record Keeping - Sec 35 & 36
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Role of the board and senior management - Section 9 of CBN AML/CFT/CPF Regulation 2022
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    AML/CFT Offences and Penalties
+                                </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Module 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 4: Ethics and Compliance (WB/AB&C/OBI/Gift Policy)
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad sub-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Anti-bribery and Corruption
+                                </li>
+
+                                <ul class="drop-sub-text">
+                                    <li>
+                                        Overview of Bribery and Corruption
+                                    </li>
+                                    <li>
+                                        Corruption Risks
+                                    </li>
+                                    <li>
+                                        Legal and Regulatory Framework to address Bribery and Corruption
+                                    </li>
+                                    <li>
+                                        Elements of an Anti-Bribery and Corruption (ABAC) Programme
+                                    </li>
+                                    
+                                </ul>
+
+                                <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Whistle Blowing
+                                  </li>
+  
+                                  <ul class="drop-sub-text">
+                                      <li>
+                                        Definition
+                                      </li>
+                                      <li>
+                                        Components of a Whistle blowing programme
+                                      </li>
+                                      <li>
+                                        Compliance Maturity Model
+                                      </li>
+                                      
+                                  </ul>
+
+                                  <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Risk and Control
+                                  </li>
+  
+                                  <ul class="drop-sub-text">
+                                      <li>
+                                        Definition and Identification of Risk
+                                      </li>
+                                      <li>
+                                        Risk Prioritization
+                                      </li>
+                                      <li>
+                                        Compliance officer - Section 13 CBN AML/CFT/CPF regulation
+                                      </li>
+                                      <li>
+                                        Monitoring/Reviewing Risk and Controls
+                                    </li>
+                                    <li>
+                                        Role of Internal Audit
+                                    </li>  
+                                  </ul>
+
+                               
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 5: Electronic Payment Risk Management
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Risk Management Principles for Electronic Payment
+                                  </li>
+  
+                                  <ul class="drop-sub-text">
+                                      <li>
+                                        Risk and Risk Management
+                                      </li>
+                                      <li>
+                                        Risk Analysis
+                                      </li>
+                                      <li>
+                                        Risk Categories
+                                      </li>
+                                      <li>
+                                        Risk Impact Scoring
+                                    </li>
+                                    <li>
+                                        Risk Heat Map
+                                    </li>  
+                                    <li>
+                                        Inherent Risk Vs. Residual Risk
+                                    </li>  
+                                    <li>
+                                        Principles Of Risk Management
+                                    </li>  
+                                    <li>
+                                        Benefits Of Risk Management
+                                    </li>  
+                                    <li>
+                                        Risk Management Process
+                                    </li>  
+                                    <li>
+                                        Proactive Vs. Reactive Risk Management
+                                    </li>  
+                                  </ul>
+
+                                  <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    ERM Framework
+                                  </li>
+  
+                                  <ul class="drop-sub-text">
+                                      <li>
+                                        The ERM Framework
+                                      </li>
+                                      <li>
+                                        COSO ERM Framework
+                                      </li>
+                                      <li>
+                                        ISO 31000 ERM Framework
+                                      </li>
+                                      <li>
+                                        COSO, ISO 31000, and the ERM Framework
+                                    </li>
+                                    <li>
+                                        Critical Success Factors for ERM
+                                    </li>  
+                                    <li>
+                                        Key Performance Indicators for ERM
+                                    </li>  
+                                    <li>
+                                        Three (3) Lines of Defense
+                                    </li>  
+                                  </ul>
+
+                                  <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    E-Payment Risk Management
+                                  </li>
+  
+                                  <ul class="drop-sub-text">
+                                      <li>
+                                        Board and Management Oversight (Principles 1 to 3)
+                                      </li>
+                                      <li>
+                                        Security Controls (Principles 4 to 10)
+                                      </li>
+                                      <li>
+                                        Legal & Reputational Risk Management (Principles 11 to 14)
+                                      </li>
+                                      <li>
+                                        E-Payment Fraud
+                                    </li>
+                                    <li>
+                                        The Fraud Triangle
+                                    </li>  
+                                    <li>
+                                        Electronic Payment Opportunities
+                                    </li>  
+                                  </ul>
+
+                            </ul>
+                        </div>
+                      </div>
+
+
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 6: The payment Ecosystem
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Payment Stakeholders
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Payment Ecosystem
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Electronic Payment Channels
+                                </li>
+
+                            </ul>
+                        </div>
+                      </div>
+
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 7: Nigeria Payment System Environment
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Payment Regulators in Nigeria
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    National Payments System vision 2020 (PSV2020)
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Nigeria Payment Ecosystem
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Payment Licensing & Structure
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    IT Standards for NFS Industry - DMB, PSPS, NMFBS
+                                </li>
+
+                            </ul>
+                        </div>
+                      </div>
+
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 8: Cybersecurity for Digital Payment
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Cybersecurity Triad
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Terms and Definition
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Threat Landscape
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Digital Payment Ecosystem
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Cybersecurity Frameworks
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Certifications and Standards
+                                </li>
+
+                            </ul>
+                        </div>
+                      </div>
+
+
+               
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        Homework: develop an anti-money laundering review plan for the Bank
+                        <br><br>
+                        Case studies will be used to demonstrate how organizations have implemented compliance programmes
+                        <br>
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        Homework: to assess and comment on a compliance case study highlighting areas of concern
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: ₦220, 000 per participant.
+                    </li>
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Virtual
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: The course, which will be facilitated by Subject Matter Experts and delivered in a variety of ways including:
+                        <br>
+                        · Practical learning scenarios and case studies
+                        <br>
+                        · Breakout sessions
+                        <br>
+                        · Questions and answers session
+                    </li>
+
+                    
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 2 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Presentation
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Virtual machine training environment
+                    </li>
+                </ul>
+            </div>
+
+                   <!--   Course Perks -->
+                   <!-- <div class="about-course-text">
+                    <p class="about-course-heading" id="to-prerequisites">
+                        Prerequisites
+                    </p>
+    
+                    <ul class="about-course-list">
+                        <li class="about-course-list-child">
+                            <i class="bi bi-check-lg"></i> 
+                            Payments Basic Training (including module 5: ATM Driving).
+                        </li>
+                       
+                    </ul>
+                </div> -->
+
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+          {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

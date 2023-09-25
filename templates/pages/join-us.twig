@@ -1,0 +1,47 @@
+{% extends 'layouts/index' %}
+
+{% block content %}
+    <!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading">
+        <p class="cdpe-main_heading">
+            Join Us.
+        </p>
+    </div>
+</section>
+    <div class="form-style">
+        <div class="form-area">
+                    <div class="form-inner">
+                        <form id="form_details" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                             <span class="input_placeholder">First Name <span class="required_symbol">*</span></span>
+                                <input type="text" class="form-control" id="firstName"  value="" required/>
+                            </div>
+                            <div class="form-group">
+                                <span class="input_placeholder">Last Name <span class="required_symbol">*</span> </span>
+                                <input type="text" class="form-control" id="lastName" value="" required/>
+                            </div>
+                            <div class="form-group">
+                                <span class="input_placeholder">Email <span class="required_symbol">*</span></span>
+                                <input type="email" class="form-control" id="email" required/>
+                            </div>
+                            <div class="form-group">
+                                <span class="input_placeholder">Phone Number <span class="required_symbol">*</span></span>
+                                <input class="form-control tel" type="tel" id="phoneNumber" inputmode="tel" required/>
+                            </div>
+                        
+                            <div class="form-group">
+                                <span class="input_placeholder">Course Name <span class="required_symbol">*</span></span>
+                                <textarea name="message" id="message" cols="30" rows="6" class="form-message-control" required></textarea>
+                            </div>
+                            <button type="" id="btnSave" class="contact-form-btn form-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+</div>
+
+
+{% include 'layouts/bank_logos' %}
+{% include 'layouts/footer1' %}
+
+{% endblock %}

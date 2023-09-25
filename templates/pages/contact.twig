@@ -1,0 +1,319 @@
+{% extends 'layouts/index-head' %}
+
+{% block content %}
+    
+    <!-- COURSE MAIN HEADING  -->
+<div class="contact-banner">
+
+    <nav class="nav-container">
+        <div class="top-nav">
+            <div class="logo">
+                <a href="/" > <img src="assets/images/logo.svg"> </a> 
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+
+            <ul class="menu aux-menu-contact">
+                <li class="nav-item"><a href="/courses"> Courses </a></li>
+                <li class="nav-item"><a href="/faculty"> Faculty </a></li>
+                <li class="nav-item"><a href="/resources"> Resources </a></li>
+                <li class="talk-btn nav-item"> <a href="/contact"> Contact Us </a></li>
+                <!-- <li class="nav-item"><i class="bi bi-search"></i></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cdpe_heading">
+        <p class="cdpe-main_heading">
+            Contact Us.
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offers a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+
+    <div class="form_and_info_flex">
+        <section class="grid_container">
+          <div class="row form-position" >
+              <div class="">
+                  <div class="form-area">
+                      <div class="form-inner">
+                          <form action="post" id="contactForm">
+                              <div class="form-group">
+                               <span class="input_placeholder">Full Name <span class="required_symbol"></span></span>
+                                  <input type="text" class="form-control" id="fullName" value="" required/>
+                              </div>
+                              <div class="form-group">
+                                  <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                                  <input type="text" class="form-control" id="email" name="name" required/>
+                              </div>
+                              <div class="form-group">
+                                  <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                                  <input class="form-control tel" type="tel" id="phoneNumber" name="leyka_donor_phone" inputmode="tel" value=""/>
+                              </div>
+                          
+                              <div class="form-group">
+                                  <span class="input_placeholder">How can we help you?</span>
+                                  <textarea name="message" id="message" cols="30" rows="6" class="form-message-control"></textarea>
+                              </div>
+                              <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        
+        <!-- VERVE CONTACT INFORMATION -->
+  
+        <section class="grid_container p-main">
+          <div class="contact-info">
+  
+              <div class="contact-info-flex">
+                  <div class="contact-info-item">
+                     <p class="contact-item-head">Email</p>
+              
+                      <p class="contact-info_small-text">
+                          <a href="mailto:skill_base@interswitchgroup.com">  
+                            skill_base@interswitchgroup.com
+                          </a>
+                      </p>
+  
+                  </div>
+  
+                  <div class="contact-info-item">
+                       <p class="contact-item-head">Phone</p> 
+                  
+                      <p class="contact-info_small-text">
+                          <a href="tel:+2348033302743">
+                           
+                            +2348033302743 
+                          </a> <br><br>
+                         
+                          <a href="tel:+2349023304957">
+                            +2349023304957
+                          </a>
+                      </p>
+                  </div>
+  
+                  <!-- <div class="contact-info-item">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p class="contact-info_big-text">
+                         Location
+                      </p>
+                      <p class="contact-info_small-text">
+                          15B Oko-Awo Street, Victoria Island Lagos.
+                      </p>
+  
+                  </div> -->
+              </div>
+          </div>
+        </section>
+  </div>
+</div>
+
+<section class="container contact-pad">
+    <div class="cdpe_heading">
+        <p class="cdpe-main_heading">
+            Frequently Asked Questions
+        </p>
+    </div>
+
+    <div class="faq-accordion">
+        <main class="faq_main">
+            <div class="faqs-grid">
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        How do I sign up for a course?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+                            <p>
+                                Some of our courses may have prerequisites or require certain knowledge or skills. 
+                                Please refer to the course description or contact us for more information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Can I transfer my registration to another course or person?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+                            <p>
+                                In some cases, we allow transfers to another course or person. 
+                                Please contact us for more information.
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        What is the cancellation or refund policy?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+                            <p>
+                                Our cancellation and refund policy is outlined in our terms and conditions, which can be found on our website. Generally, we allow cancellations up to a certain date before the course starts, after which point we do not offer refunds. 
+                                However, you may be able to transfer your registration to another course or person.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        How long does the course take to complete?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                The length of the course will vary depending on the specific course you are taking. 
+                                Please refer to the course description or contact us for more information.
+                            </p>
+        
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Is there a time limit for completing the course?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                Again, this will depend on the specific course you are taking. 
+                                Some courses may have a set time frame for completion, while others may be self-paced.
+                            </p>
+        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Do you offer any discounts for groups or multiple course enrollments?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                kindly contact
+                                We do offer discounts for groups and multiple course enrollments. 
+                                Please contact us for more information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Are the courses offered online or in-person?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                We offer both online and in-person courses. 
+                                Please refer to the course description or contact us for more information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Do you offer any financing options for the courses?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                We do offer financing options for some of our courses. 
+                                Please contact us for more information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Is there a certificate of completion provided after finishing the course?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                Yes, upon successful completion of the course, you will receive a certificate of completion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Do the courses have any prerequisites or required knowledge or skills?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                Some of our courses may have prerequisites or require certain knowledge or skills. 
+                                Please refer to the course description or contact us for more information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="faqs-item ">
+                    <a class="faqs-title" href="#custom">
+                        Can I customize the training program to fit my specific needs?
+                    </a>
+                    <div class="faqs-content">
+                        <div class="faqs-content-inside">
+        
+                            <p>
+                                We do offer some customization options for our training programs. 
+                                Please contact us to discuss your specific needs and how we can accommodate them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </main>
+    </div>
+</section>
+
+
+<!-- COMMUNITY SECTION -->
+<section class="container">
+    <div class="community">
+        <div class="community-text">
+            <p class="community-heading">
+                Be Part of a Learning Community
+            </p>
+            <p class="community-paragraph">
+                Become part of our global learning community. Learn and network with digital cohorts — groups. 
+                Share your ideas and experience to motivate people throughout your learning journey and build strong relationships.
+            </p>
+            <div class="community-btn-container">
+                <a href="/join-us" class="community-btn">Join now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

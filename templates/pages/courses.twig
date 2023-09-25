@@ -1,0 +1,507 @@
+{% extends 'layouts/index' %}
+
+{% block content %}
+ <!-- ALL COURSES SECTION -->
+       <section class="container">
+       {{entry.courseHeader}}
+ <!-- CATALOGUE SECTION -->
+        <div class="catalogue-list-container" id="BtnContainer">
+            <div class="catalogue-flex">
+            {% for entry in entry.catalogueTop %}
+                <a href="{{entry.catalogueTopLink}}">
+                    <p class="top-catalogue-item cat-interactive {{entry.catalogueTopActive}} btn" onclick="{{entry.catalogueTopOnClick}}" >
+                        {{entry.catalogueTopName}}
+                    </p>
+                </a>
+              {% endfor %} 
+            </div>
+
+            {# <div class="catalogue-flex">
+            {% for entry in entry.catalogueBottom %}
+                <a href="{{entry.catalogueBottomLink}}">
+                    <p class="bottom-catalogue-item cat-interactive btn" onclick="{{entry.catalogueBottomOnClick}}">
+                        {{entry.catalogueBottomName}}
+                    </p>
+                </a>
+             {% endfor %} 
+            </div> #}
+        </div>
+       </section>
+
+       
+        <section class="container filterDiv digital-payments" id="digital">
+            <div class="popular-courses-text heading-width">
+                <p class="popular-courses-main_heading">
+                    {{entry.digitalCatalogueTitle}}
+                </p>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="popular-courses-cards">
+           
+             {% for entry in entry.digitalCatalogueContent %}
+            
+                <div class="card card-scale" style="background:url({{entry.catalogueContentImageLink}}); background-repeat:no-repeat">
+                    <div class="text-card">
+                     <a href="{{entry.catalogueContentUrl}}">
+                        <p class="text-card-paragraph">
+                            {{entry.catalogueContentTitle}}
+                        </p>
+                     </a>
+                    </div>
+                </div>
+                
+             {% endfor %} 
+      
+            </div>
+
+        </section>
+
+
+        <!-- EC council security courses -->
+        <section class="container filterDiv postilion" id="postilion">
+            <div class="popular-courses-text heading-width">
+                <p class="popular-courses-main_heading">
+                   Postilion Courses
+                </p>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="popular-courses-cards">
+                <a href="https://forms.office.com/r/9sseFBTy1c">
+                    <div class="card card-12 card-scale">
+                        <div class="text-card">
+                            <p class="text-card-paragraph">
+                                ACI (Postilion) Payments Basic Training 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://forms.office.com/r/3v0z8jRvJr">
+                    <div class="card card-13 card-scale">
+                        <div class="text-card">
+                            <p class="text-card-paragraph">
+                                ACI (Postilion) Advanced Realtime Training 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://forms.office.com/r/sGh5ZXsyc2">
+                    <div class="card card-14 card-scale">
+                        <div class="text-card">
+                            <p class="text-card-paragraph">
+                            ACI (Postilion) Advanced PostCard Training 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+
+              <a href="https://forms.office.com/r/wMRZeVXNBK">
+                    <div class="card card-15 card-scale">
+                        <div class="text-card">
+                            <p class="text-card-paragraph">
+                                ACI (Postilion) ATMApp Practical Specialised Training 
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://forms.office.com/r/j3t2GfxpDy">
+                    <div class="card card-16 card-scale">
+                        <div class="text-card">
+                            <p class="text-card-paragraph">
+                                ACI_ UP Framework Technical Bootcamp (Basic)
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://forms.office.com/r/SjmV1bC4Qc">
+                <div class="card card-17 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ACI_ UP Framework Technical Training 
+                        </p>
+                    </div>
+                </div>
+                </a>
+
+        </section>
+
+        <!-- Business Management Courses -->
+        <section class="container filterDiv business-management" >
+            <div class="popular-courses-text heading width">
+                <p class="popular-courses-main_heading">
+                    Business Management Courses
+                </p>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="popular-courses-cards" id="business">
+                <div class="card card-23 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Applying Data Analytics For Customer Acquisition, Engagement and Rentention In Financial Service
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-24 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Credit Risk Modelling -Data Treatment & Feature Selection on Credit Cards
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-9 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Applying Data Science and Machine Learning to Payments
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-25 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Application Of Descriptive Analytics in Retail Banking - A Credit Card Use Case
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Data Science Courses -->
+         <section class="container filterDiv data-science" id="data-science">
+            <div class="popular-courses-text heading-width">
+                <p class="popular-courses-main_heading">
+                    Data Science Courses
+                </p>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="popular-courses-cards">
+                <div class="card card-26 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Design Thinking in Financial Services
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-27 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            SAFe Agile for Teams (With SAFe Practitioner Certification)
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-28 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Leading SAFe 5 Agilist Certification Training
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-29 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Certified Business Analysis Professional (CBAP)
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="card card-30 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Business Relationship Management Professional (BRMP)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Interswitch Product Operation Courses -->
+        <section class="container filterDiv product-operations" id="isw-product">
+            <div class="popular-courses-text heading-width">
+                <p class="popular-courses-main_heading">
+                    Interswitch Product Operation Courses
+                </p>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="popular-courses-cards">
+                <div class="card card-31 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Payments Technologies Masterclass
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-32 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Network Operations, Settlement and Finality on Payment Channels
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-33 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Verve Global Operations and Settlement Training
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-34 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ACI (Postilion) Payments Basic Training
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-35 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ACI (Postilion) Advanced Realtime Training
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-36 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ACI (Postilion) Advanced PostCard Training
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-37 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ACI (Postilion) ATMApp Practical Specialised Training
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-38 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ACI_ UP Framework Technical Bootcamp (Basic)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-39 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ACI_ UP Framework Technical Training
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-40 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Enterprise Service Bus (ESB) Support Training
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-41 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Key Management on HSMs (Hardware Security Module
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-42 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Disaster Recovery Professional - Carbonite
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-1 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Stratus 99.999 Advanced Certified Professionals Program
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-43 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Payments Certified Systems Engineer - HSM (THALES)
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+
+        <!-- Information Technology & Channels Courses -->
+        <section class="container filterDiv information-technology" id="info-tech">
+            <div class="popular-courses-text heading-width">
+                <p class="popular-courses-main_heading">
+                    Information Technology & Channels Courses
+                </p>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="popular-courses-cards">
+                <div class="card card-44 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Project Management Professional (PMP)
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-45 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ITIL 4 Foundation
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-46 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            VMware vSphere: Install, Configure, Manage [V7]
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-47 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            AWS Certified Cloud Practitioner (AWS Cloud Practitioner)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-48 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Microsoft Azure Administrator AZ-104T00
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-49 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Administering a SQL Database Infrastructure
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-50 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Certified Information Systems Security Professional (CISSP)
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-51 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Certified Cloud Security Professional (CCSP)
+                        </p>
+                    </div>
+                </div>
+
+              <div class="card card-52 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Certified Kybernates Adminstrator (CKA)
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-53 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            CompTIA Network+ (N10-008)
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-46 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            CompTIA SYS-601-Security+
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-41 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Certified Secure Software Lifecycle Professional (CSSLP)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--   Cyber Security, Risk & Compliance Courses-->
+        <section class="container filterDiv cyber-security" id="cyber">
+            <div class="popular-courses-text heading-width">
+                <p class="popular-courses-main_heading">
+                    Cyber Security, Risk & Compliance Courses
+                </p>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="popular-courses-cards">
+                <div class="card card-57 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Risk and Compliance on Electronic Payment Systems
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-58 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Security Audit, Controls and Investigations on Postilion Systems
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-59 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ARIC (iSaaS) User Training
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-60 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            ARIC (iSaaS) Advanced Technical Training                       
+                         </p>
+                    </div>
+                </div>
+
+                <div class="card card-61 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Certified Business Continuity and Disaster Recovery Professional
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-62 card-scale">
+                    <div class="text-card">
+                        <p class="text-card-paragraph">
+                            Global Industrial Cyber Security Professional | GICSP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         {% include 'layouts/bank_logos' %}
+          {% include 'layouts/footer1' %}
+    
+
+
+       <!-- DIGITAL COMPANIES SECTION-->
+   
+
+    {% endblock %}

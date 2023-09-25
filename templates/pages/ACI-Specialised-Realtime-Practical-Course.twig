@@ -1,0 +1,519 @@
+{% extends 'layouts/courses' %}
+
+
+{% block content %}
+
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading">
+                Digital Payments, Data and Fintech
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+            Payments Specialized Training: AtmApp
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+                Payments Specialized Training: AtmApp
+            </p>
+
+            <p class="course-content-item up-pad">
+                Goal of The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+
+            <p class="course-content-item">
+                <a href="#to-prerequisites">Prerequisites </a> 
+             </p>
+             <button class="register-btn" onclick ="openForm()">
+                    Register Now
+            </button>
+
+            <!-- POPUP form -->
+            
+            <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" id="popForm" method="post" class="formContainer" enctype="multipart/form-data">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                    <div class="form-group">
+                        <span class="input_placeholder">First Name </span>
+                           <input type="text" class="form-control" id="firstName" value="" required/>
+                       </div>
+                       <div class="form-group">
+                           <span class="input_placeholder">Last Name</span>
+                           <input type="text" class="form-control" id="lastName" name="name" required/>
+                       </div>
+                       <div class="form-group">
+                            <span class="input_placeholder">Email Address</span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                       <div class="form-group">
+                           <span class="input_placeholder">Phone Number </span>
+                           <input class="form-control " id="phoneNumber" type="number" value=""/>
+                       </div>
+                       <div class="form-group">
+                            <span class="input_placeholder">Gender</span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="industry" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control tel c-title" type="text" id="courseTitle" value="Payments Specialized Training: AtmApp" readonly/>
+                        </div>
+                   
+                       <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                       </div>
+                    </form>
+            </div>
+        </div> 
+
+        <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                {# <p class="about-course-heading">
+                    Goal of this Course
+                </p> #}
+
+                <p class="about-course-paragraph">
+                    To explain how to use the AtmApp terminal-driving interface to perform ATM processing. The course provides an introduction to ATM-related concepts such as states, screens, and downloads, and shows participants how to perform a basic configuration of AtmApp and troubleshoot operational problems.
+                </p>
+
+               
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <p class="about-course-paragraph">
+                    The Payments Specialized Training: AtmApp course is aimed at anyone who will be responsible for adding or modifying ATM-related information such as new terminals and downloads on a Postilion Payments system with AtmApp. 
+                    This includes anyone responsible for the deployment of ATMs on a payments system with AtmApp.
+                </p>
+
+
+                <!-- <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Administering databases
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing logical database schema solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining high-availability solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Automating administrative tasks
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining security solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Monitoring and troubleshooting the database server
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing and executing deployments
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining the infrastructure (storage, hardware, and number of servers or instances, etc.)
+                    </li>
+                </ul> -->
+            </div>
+
+
+            
+
+           <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Session 1: Atm-driving revision
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Configuring the atm-driving framework
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Customization data
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Sending customization data to the Atm application
+                                </li>
+                                <!-- <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    COTS Considerations
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Requirements approaches
+                                </li> -->
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- Module 2 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Session 2: AtmApp configuration
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Configuring the AtmApp application
+                            </li>
+                            <li class="about-course-list-child child-pad sub-pad">
+                                <i class="bi bi-circle"></i>
+                                Managing download applications, loadset groups, and loadsets
+                            </li>
+                            <ul class="drop-sub-text">
+                                <li>
+                                    Exporting and importing download applications
+                                </li>
+                                <li>
+                                    Adding and editing loadset groups
+                                </li>
+                                <li>
+                                    Configuring device-dependent downloads
+                                </li>
+                            </ul>
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 3 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Session 3: Modifying download applications
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Configuring FITs
+                                </li>
+                                <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Editing screens
+                                </li>
+                                <ul class="drop-sub-text">
+                                    <li>
+                                        Screen data
+                                    </li>
+                                    <li>
+                                        Editing screen data
+                                    </li>
+                                    
+                                </ul>
+                                <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Editing states
+                                </li>
+                                <ul class="drop-sub-text">
+                                    <li>
+                                        How an ATM transaction is processed
+                                    </li>
+                                    <li>
+                                        Editing state data
+                                    </li>
+                                    
+                                </ul>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Adding new currencies
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Adding new languages
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuring ATM receipts
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuring surcharging
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuring miscellaneous configuration parameters
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuring EMV (if applicable)
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuring the SSF monitoring capability
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuration cautions
+                                </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Module 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Session 4: Daily ATM-driving operations
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad sub-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Monitoring terminals
+                                </li>
+
+                                <ul class="drop-sub-text">
+                                    <li>
+                                        Realtime monitor
+                                    </li>
+                                    <li>
+                                        Terminals monitor
+                                    </li>
+                                    <li>
+                                        Tracing
+                                    </li>
+                                    
+                                </ul>
+
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Using ATM Commander
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Batches and cutovers
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    ATM reports
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Session 5: Troubleshooting
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Support cards rejected
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Transactions consistently fail
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    ATM does not take a load
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Configuration changes do not take effect
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Problems experienced with dispensing and cassette configuration
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Problems experienced with ATM balancing
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    AtmApp cannot process messages received from the ATM
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+               
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N1,300,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: Instructor-led, practical (lab-based).
+                    </li>
+
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Building 7a, Oko Awo Close, Victoria Island, Lagos
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 5 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Presentation
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Virtual machine training environment
+                    </li>
+                </ul>
+            </div>
+
+                   <!--   Course Perks -->
+                   <div class="about-course-text">
+                    <p class="about-course-heading" id="to-prerequisites">
+                        Prerequisites
+                    </p>
+    
+                    <ul class="about-course-list">
+                        <li class="about-course-list-child">
+                            <i class="bi bi-check-lg"></i> 
+                            Payments Basic Training (including module 5: ATM Driving).
+                        </li>
+                       
+                    </ul>
+                </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+          {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

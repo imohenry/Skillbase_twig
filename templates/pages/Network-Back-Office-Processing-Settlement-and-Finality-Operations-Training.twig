@@ -1,0 +1,445 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading">
+                Digital Payments, Data and Fintech
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+             Network Back Office Processing, Settlement and Finality Operations Training
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+                Network Back Office Processing, Settlement and Finality Operations Training
+            </p>
+
+            <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+            <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+                <!-- POPUP form -->
+                <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" class="formContainer" id="popForm" method="post">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                        <div class="form-group">
+                        <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="firstName" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="lastName" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                            <input class="form-control tel" id="phoneNumber" type="number" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Gender <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" id="industry" type="text" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control c-title" type="text" id="courseTitle" value="Network Back Office Processing, Settlement and Finality Operations Training" readonly/>
+                        </div>
+                    
+                        <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+         <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    This course provides a basic understanding of EFT operational concepts within the Payments network.
+                </p>
+
+                <p class="about-course-paragraph">
+                    It is a comprehensive, interactive training session that aims to facilitate an in-depth understanding of the various concepts of EFT Transaction processing - such as Issuing and Acquiring Operations, Settlement & Reconciliation, Reporting, Dispute Management and Operational Support pertaining to both the Interswitch Network and its affiliated partners (Visa, MasterCard, Verve, China UnionPay, Verve).
+                </p>
+
+                <p class="about-course-paragraph">
+                    Specifically tailored for EFT Operations staff wishing to develop a stronger sense of profession around managing day to day activities at the back end and become excellent in supervising and monitoring effectiveness within this space.
+                </p>
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <p class="about-course-paragraph">
+                    Operations, Customer Service, Card Support, Settlement, Reconciliation & Dispute Resolution Staff
+                </p>
+
+                <!-- <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Administering databases
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing logical database schema solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining high-availability solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Automating administrative tasks
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining security solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Monitoring and troubleshooting the database server
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing and executing deployments
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining the infrastructure (storage, hardware, and number of servers or instances, etc.)
+                    </li>
+                </ul> -->
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Fundamentals of Transaction Processing
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                EFT Concepts and Stakeholders
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    General Transaction Processing Architecture and flow
+                                </li>
+                                  <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Cards and Transaction Routing
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Payment Cycle
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- Module 2 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Electronic Transaction Reconciliation
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Understanding the parties in Electronic transaction (Acquirer, Issuer, Switch, ISO, Card Scheme, Regulator)
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                GL Reconciliation and Analysis (Types of GL, Reconciliation, Exception handling)
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Chart of account (Definition, Categories)
+                            </li>
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 3 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Settlement, Reporting and Reconciliation
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Interswitch Network transactions
+                                </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Module 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Card schemes and their Peculiarities
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Mastercard
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    VISA
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verve
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    UnionPAY International
+                                </li>
+
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Other Settlement entries
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Service Billing
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Settlement Adjustments
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                    <!-- Module 6 -->
+                    <div class="drop-container">
+                    <div class="label">
+                        <p class="course-contents_heading days-flex">
+                            Managing Disputes                         
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Disputes on Arbiter
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Disputes on 3rd Party Networks
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Disputes Outside of Arbiter
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Module 7 -->
+                    <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Troubleshooting & Support
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Investigating an anomaly
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Reporting/Escalating an anomaly
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Troubleshooting examples, possible causes and recommended resolution
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                            
+                 </div>
+            </div>
+
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N210,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: Hybrid (The instructor will be present at the address listed and will also 
+                        host the workshop on a collaboration software program so students can choose their preferred training method)
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Virtual
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 2 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <!-- <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li> -->
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Hands-on experience with examples and case studies
+                    </li>
+
+                    <!-- <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+       {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

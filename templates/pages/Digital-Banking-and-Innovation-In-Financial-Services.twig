@@ -1,0 +1,501 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading business-tiny-heading">
+                Business Management
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+           Digital Banking, New Payments and Innovation In Financial Services
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+                Digital Banking, New Payments and Innovation In Financial Services
+            </p>
+
+            <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+            {# <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p> #}
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+            <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+                <!-- POPUP form -->
+                <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" class="formContainer" id="popForm" method="post">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                      <div class="form-group">
+                        <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="firstName" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="lastName" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                            <input class="form-control tel" id="phoneNumber" type="number" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Gender <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" id="industry" type="text" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control c-title" type="text" id="courseTitle" value="Digital Banking, New Payments and Innovation In Financial Services" readonly/>
+                        </div>
+                    
+                        <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+       <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    In this intensive course, participants will gain holistic knowledge on trends and opportunities in digitization and its interrelation with todays' banking operations. 
+                </p>
+
+                <p class="about-course-paragraph">
+                    This course looks to paint a picture of the past and present of banking and how Fintech has reshaped traditional banking operations
+                </p>
+                <p class="about-course-paragraph">
+                    Participants are given a comprehensive, interactive knowledge base and an in-depth understanding 
+                    of the global banking economy while also delving into marketplace challenges, payment operations 
+                    and many more.
+                </p>
+                <p class="about-course-paragraph">
+                    The case studies that will be discussed during the training are directly related to analyzing, visualizing 
+                    and managing these elements to further shed light on how digital disruption can affect a company’s 
+                    entire value chain.
+                </p>
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <!-- <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <p class="about-course-paragraph">
+                    New and experienced program managers; Senior project managers and directiors, 
+                    PMO managers, Up and coming project professionals who desire formal knowledge of program management.
+                </p> -->
+
+               
+
+                <!-- <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Administering databases
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing logical database schema solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining high-availability solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Automating administrative tasks
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining security solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Monitoring and troubleshooting the database server
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing and executing deployments
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining the infrastructure (storage, hardware, and number of servers or instances, etc.)
+                    </li>
+                </ul> -->
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                        <p class="course-content-item">
+                            Module 1:
+                         </p>
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                An Overview of the Digital Banking Horizon
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Disruption
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Ecosystem Model
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- Module 2 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Introduction and Key Technological trends affecting Financial Services
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Overview of Digital Transformation
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Digital Payments Trends
+                              </li>
+
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Digital Banking and Digitalisation of FIs
+                              </li>
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Understanding Disruption
+                              </li>
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Traditional Disruption Model
+                              </li>
+                              <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                A New Dimension to Disruption
+                              </li>
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 3 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                The Glocal Fintech Era and Impact on Banking Operations
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Some Global Trends
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Digital Reach
+                                  </li>
+                                  <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Ecommerce
+                                  </li>
+                                  <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Internet Penetration and Social Media Impacting Purchases
+                                  </li>
+                                  <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    The Mobile Payment Landscape
+                                  </li>
+                                  <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Africa FinTECH
+                                  </li>
+                                  <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Proliferation of Alternative Payments
+                                  </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Module 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                How the Financial Industry has responded to Digitization
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  The 4 Nexus of Forces
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Convergence between Fintech and the Financial Industry
+                                  </li>
+                                  <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Convergence between Fintech and the Telecom Industry
+                                  </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Network Effects of Technology
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Overview of Digitisation and Business Sustainability
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Imapct of Digitization in some markets Globally
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    How the financial Technology Industry has responded to Digitization
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Case Studies
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                    <!-- Module 6 -->
+                    <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Value of Platforms and APIs                          
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Value of Platforms and APIs
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    The Concept of Platform Ecosystems
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Products and Platforms
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    The Evolution of Open APIs
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    How Banks are expected to evolve in the Platform and API Era
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Case Studies
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Module 7 -->
+                    <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Monetisation of Data 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Advances in analytics and digital behavior tracking customer behavior and preferences.
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Advances in analytics and digital behavior tracking customer behavior and preferences.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                            
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N250,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY:  significant section of this course will be delivered via learning by case studies - to analyse and 
+                        appreciate learning. This approach enables participants to learn through in-depth discussion and use 
+                        collective brainpower to solve big problems. 
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Building 7a, Oko Awo Close, Victoria Island, Lagos
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 3 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Hands-on experience with examples and case studies
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+       {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

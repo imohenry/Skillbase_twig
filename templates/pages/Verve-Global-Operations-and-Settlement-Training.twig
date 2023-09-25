@@ -1,0 +1,517 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading business-tiny-heading">
+                Business Management
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+           Verve Global Operations and Settlement Training
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+              Verve Global Operations and Settlement Training
+            </p>
+
+           <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content"> Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+            <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+                <!-- POPUP form -->
+                <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" class="formContainer" id="popForm" method="post">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                       <div class="form-group">
+                        <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="firstName" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="lastName" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                            <input class="form-control tel" id="phoneNumber" type="number" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Gender <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" id="industry" type="text" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control c-title" type="text" id="courseTitle" value="Verve Global Operations and Settlement Training" readonly/>
+                        </div>
+                    
+                        <button type="submit" class="contact-form-btn form-submit" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+         <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    This course provides a full understanding of all Verve Scheme products, network's and associated 
+                    Operations.  
+                </p>
+
+                <p class="about-course-paragraph">
+                    We will offer in-depth knowledge of product offerings, the roles the different partners play in 
+                    delivering value and its usage in the market it serves.
+                </p>
+                <p class="about-course-paragraph">
+                    Foundational understanding of transaction processing in an Operational Electronic Payment 
+                    Environment such as Interswitch. This comprehensive interactive training session also aims to 
+                    facilitate an understanding of Settlement and Reconciliation on the Verve Network in addition to the 
+                    expected cardholder management processes.
+                </p>
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <p class="about-course-paragraph">
+                    Card Business, Card Operations, Customer Service, Card Support & Dispute 
+                    Resolution Staff
+                </p>
+
+                <!-- <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Administering databases
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing logical database schema solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining high-availability solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Automating administrative tasks
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining security solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Monitoring and troubleshooting the database server
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing and executing deployments
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining the infrastructure (storage, hardware, and number of servers or instances, etc.)
+                    </li>
+                </ul> -->
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Day 1 -->
+                        <p class="course-content-item sub-pad">
+                            <strong> Day 1 - Verve Product Knowledge </strong> 
+                        </p>
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Physical Payment Instruments
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verve Debit
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verve Contactless
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verve prepaid
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Virtual Payment Instruments
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              eCash
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                mPin
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Paycode
+                            </li>
+                           
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!--sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                eWallet
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Plug in
+                                </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Platforms
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Verve Safetoken
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verve Payday
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verve Rewards
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Gift Card
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verveworld (USSD, App, Website)
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Verve Acceptance
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 2 -->
+                      <p class="course-content-item sub-pad">
+                        <strong> DAY 2 - Verve Network Operations </strong> 
+                       </p>
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Fundamentals of Transaction Processing
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    EFT Concepts and Stakeholders
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Transaction Processing Architecture
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Transaction Processing Flows
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Payment Transaction Cycle
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Transaction Message Protocols
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Principles of Authorization and Capture
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Payment Cycle flow
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Risk Processing for Issuing and Acquiring
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Pre-transaction processing risk management
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Real-time transaction processing risk management
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Post transaction processing risk management
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- sub -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Managing Disputes
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Managing disputes on behalf of Cardholders
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Managing disputes on behalf of Card Acceptors
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- Module 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Settlement, Reporting and Reconciliation
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Settlement System Overview
+                               </li>
+                               <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Reconciliation Process
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Reports descriptions
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Operational documents
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+               
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N200,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: Hybrid (The instructor will be present at the address listed and will also 
+                        host the workshop on a collaboration software program so students can choose their preferred training method)
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Interswitch Limited, Plot 1656c Oko-Awo Street (Interswitch First Annex), Victoria Island, 
+                        Lagos
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 2 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Hands-on experience with examples and case studies
+                    </li>
+
+                    <!-- <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+       {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

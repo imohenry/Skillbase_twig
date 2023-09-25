@@ -1,0 +1,473 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading business-tiny-heading">
+                Business Management
+            </p> #}
+        </div>
+
+       <p class="cdpe-main_heading">
+            Payment Certified Systems Engineer Training (PCSE) in Thales & nCipher HSMs 
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+             <p class="course-contents_heading other-course-contents_heading">
+                Payment Certified Systems Engineer Training (PCSE) in Thales & nCipher HSMs 
+            </p>
+
+            <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+            <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+                <!-- POPUP form -->
+                <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" class="formContainer" id="popForm" method="post">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                    <div class="form-group">
+                        <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="firstName" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="lastName" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                            <input class="form-control tel" id="phoneNumber" type="number" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Gender <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" id="industry" type="text" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control c-title" type="text" id="courseTitle" value="Payment Certified Systems Engineer Training (PCSE) in Thales & nCipher HSMs" readonly/>
+                        </div>
+                    
+                        <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+       <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    This intensive 3 day course provides an introduction to Thales & nCipher HSMs for administrators. Built 
+                    around hands-on learning, the class focuses on important installation, administration and data 
+                    protection knowledge hence building an efficient team capable of managing and troubleshooting 
+                    Thales Hardware Security Modules (HSMs) from the nCipher product line. It builds the skills needed to 
+                    begin deploying and managing HSM-secured systems successfully. 
+                </p>
+
+                <p class="about-course-paragraph">
+                    The training develops competence with real-world use cases and hands-on exercises. 
+                    Trainees learn the fundamentals behind today's systems that use cryptography and PKI along with 
+                    the technical details of installing, configuring, and maintaining Thales HSMs. Throughout the training, 
+                    newly learned skills are reinforced. Instructors work with students to evaluate knowledge acquisition 
+                    and the training builds on previously learned subjects. 
+                </p>
+
+                <p class="about-course-paragraph">
+                    Certified trainees leave with the experience and confidence to begin managing their own 
+                    systems effectively. **Certification means your staff members have met the expectations of Thales 
+                    consultants and are ready to manage your HSMs. 
+                </p>
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <p class="about-course-paragraph">
+                    System administrators, Network Administrators, IT Control, IT Operations and 
+                    Infrastructure Managers, Security managers, HSM Officers.
+                </p>
+
+                <!-- <p class="about-course-paragraph">
+                    Please note: Although this course uses a later edition of SQL Server and tools (2016), most of the tools are very similar to those in previous version such as 2008R2, 2012 and 2014. 
+                    All techniques and technologies are applicable to the old editions. The differences if noticeable will be pointed out on the course.
+                </p> -->
+
+                <!-- <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Administering databases
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing logical database schema solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining high-availability solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Automating administrative tasks
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining security solutions
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Monitoring and troubleshooting the database server
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Designing and executing deployments
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Defining the infrastructure (storage, hardware, and number of servers or instances, etc.)
+                    </li>
+                </ul> -->
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 1: Fundamentals and Security World                                                                     
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Fundamentals 
+
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Cryptography 
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Public Key Infrastructure (PKI) 
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    HSMs 
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Security World 
+                                </li>
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- Module 2 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 2: Deployment and Operations 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Alarms, configure security and LMK loading 
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Smart card management, authorising officers 
+                            </li>
+                            <!-- <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss star and snowflake schemas, and identify advantages and disadvantages
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss conformed dimensions
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss facts, fact tables and granularity
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss whether to use a staging database
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss timely delivery of data from source to destination (daily, hourly, real-time)
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss challenges of changing data
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss timely delivery of data from source to destination (daily, hourly, real-time)
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss slowly changing dimensions (SCD) and late-arriving dimensions
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss use of surrogate keys
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss data warehousing techniques
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Discuss designing a time dimension
+                            </li> -->
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 3 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 3: Installation and operations 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  HSM hardware
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Driver setup
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Card sets 
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Key management 
+                                </li>
+                                <!-- <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Indexes: clustered and non-clustered
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Column store indexes
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Maintaining indexes
+                                </li> -->
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Module 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                               Module 4: Lab exercises 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  HSM installation
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Security World setup 
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Card set creation 
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    CA certificate request
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Card set replacement 
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Disaster recovery
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Troubleshooting three most common errors 
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                            
+
+               
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N2,800,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: Hybrid (The instructor will be present at the address listed and will also 
+                        host the workshop on a collaboration software program so students can choose their preferred training method)
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: London, United Kingdom
+                    </li>
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 3 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Hands-on experience with examples and case studies
+                    </li>
+
+                    <!-- <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+       {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

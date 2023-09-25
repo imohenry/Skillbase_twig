@@ -1,0 +1,522 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading business-tiny-heading">
+                Business Management
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+             Design Thinking in Financial Services Masterclass
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading other-course-contents_heading">
+                Design Thinking in Financial Services Masterclass
+            </p>
+
+            <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+           <p class="course-content-item">
+              <a href="#expectations"> Expectation for Participants</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+
+            <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+            <!-- POPUP form -->
+            <div class="loginPopup">
+                <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" class="formContainer" id="popForm" method="post" enctype="multipart/form-data">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                               <div class="form-group">
+                        <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="firstName" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="lastName" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                            <input class="form-control tel" id="phoneNumber" type="number" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Gender <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" id="industry" type="text" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control c-title" id="courseTitle" type="text" value="Design Thinking in Financial Services Masterclass" readonly/>
+                        </div>
+                    
+                        <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+        <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+                <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    Design Thinking introduces a human-centered approach to solving challenging problems that is accessible to all. 
+                    It gives us the courage to tackle some of the challenges we face in our daily work. 
+                </p>
+
+                <p class="about-course-paragraph">
+                    It is a human-centered approach to problem solving that explores the “unknown terrain” using some design principles to uncover and create alternatives leading to innovation. The premise of Design Thinking is that: 
+                    If we approached problems in the same way designers approach design, we can find better solutions.
+                </p>
+                <p class="about-course-paragraph">
+                    This 2-day training introduces the key concepts of Design Thinking to participants and empowers them with simple steps 
+                    in Design Thinking process that they can apply to any challenge they face in their working environment.
+                </p>
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="expectations">
+                <p class="about-course-heading">
+                    Expectation for Participants
+                </p>
+
+                <p class="about-course-paragraph">
+                    At the end of the course, the participants will: 
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Be able to apply a Design Thinking methodology to create new products and opportunities for the business.
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Be human - centered in the understanding and solving of business problems
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Contribute to the imagining of new solutions in a cross-functional and collaborative context
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Be empowered with a new set of discovery and observation techniques to understand problems
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Develop and test possible solutions for customers by using design thinking techniques of ideate, prototype and iterate/tes
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Be empowered with knowledge of a new set of discovery and observation techniques to understanding problems
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Perform hands-on activities that will facilitate a lasting understanding of the “design thinking mindset”
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Understand core concepts of empathy, brainstorming, prototyping & storytelling
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Work in a team to visualise and design a possible new service/experience for the Organisation.
+                    </li>
+                </ul>
+            </div>
+
+
+            
+
+            <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Module 1 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 1: Introduction to Design & Design Thinking
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    What is Design
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    What is Design Thinking
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Design Principles
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Design Thinking Strategy & Capability
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Design Thinking Research Methods
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Design Thinking Process - The Double Diamond
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Developing a Design Thinking Mentality
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Field Research Exercise
+                                </li>      
+                                
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- Module 2 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 2: Design Thinking Tools
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad sub-pad">
+                              <i class="bi bi-circle"></i>
+                              Research
+                            </li>
+                            <ul class="drop-sub-text">
+                                <li>
+                                    Qualitative Research
+                                </li>
+                                <li>
+                                    Interviews
+                                </li>
+                                <li>
+                                    Observations
+                                </li>
+                            </ul>
+
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Personas
+                            </li>
+                            <li class="about-course-list-child child-pad sub-pad">
+                                <i class="bi bi-circle"></i>
+                                Customer Journey Map
+                            </li>
+                            <ul class="drop-sub-text">
+                                <li>
+                                    Class Challenge Exercise
+                                </li>
+                            </ul>
+
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Stakeholder Value Map
+                            </li>
+
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 3 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 3: Design Thinking Techniques
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad sub-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Ideation in the Context of Human-Centered Design
+                                </li>
+                                <ul class="drop-sub-text">
+                                    <li>
+                                        Brainstorming
+                                    </li>
+                                    <li>
+                                        Scamper
+                                    </li>
+                                    <li>
+                                        Worst Possible Idea
+                                    </li>
+                                    <li>
+                                        Group Exercise
+                                    </li>
+                                </ul>
+                                <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Design Thinking Prototyping (Hands-on)
+                                  </li>
+                                  <ul class="drop-sub-text">
+                                      <li>
+                                        Create something based on Ideas that have been agreed to
+                                      </li>
+                                      <li>
+                                        Get Feedback
+                                      </li>
+                                  </ul>
+
+                                  <li class="about-course-list-child child-pad sub-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Design Thinking Testing (Iterative)
+                                  </li>
+                                  <ul class="drop-sub-text">
+                                      <li>
+                                        Test with Real Users
+                                      </li>
+                                      <li>
+                                        Iterate, Get feedback, Fine tune, Iterate
+                                      </li>
+                                      <li>
+                                        The Emotional Connection Dashboard
+                                      </li>
+                                      <li>
+                                        Enhance your prototype with elements from the emotional connection board
+                                      </li>
+                                  </ul>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Module 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Day 2
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Idea Mapping
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Dot Voting
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Sketching, Make it Collaborative -Brainstorming
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Story Telling and Design thinking Problem Solving
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Make it Relish, Visual/Engaging and Tangible Performative
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Case Study & Live Presentations/Projects
+                                </li>
+                                <ul class="drop-sub-text">
+                                    <li>
+                                        Empathise to help Define employee problems
+                                    </li>
+                                    <li>
+                                        Brainstorm to discuss possible solutions
+                                    </li>
+                                    <li>
+                                        Develop Prototypes to spark new ideas
+                                    </li>
+                                    <li>
+                                        Gain more insights from employees through Testing
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Module 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Module 5: Validate & Prepare to Implement
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Create: Develop prototypes of a big idea, get constructive feedback
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Create a presentation and present it in a Dragons Den format, selection of winning team and party time.
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Concept Development
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Concept Pitches (including implementation strategy for adoption)
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                            
+
+               
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N300,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: Most of the learning will be done by working on a specific case using different tools. Participants will be challenged to work in small teams on real cases using design thinking
+
+                        tools like Personas, Customer Journey Mapping, Prototyping, Stakeholder Mapping, Value Network Mapping and much more. Moreover, a focus of this program will be on exploring the questions of how to integrate these tools bank wide and how to create buy-in within the organization and
+                        
+                        with your sponsors.
+                    </li>
+
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Building 7a, Oko Awo Close, Victoria Island, Lagos
+                    </li> -->
+
+                    <!-- <li class="about-course-list-child about-course-list-child-2">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 5 days
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Hands-on experience with examples and case studies
+                    </li>
+
+                    <!-- <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+       {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}

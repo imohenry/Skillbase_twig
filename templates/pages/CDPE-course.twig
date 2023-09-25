@@ -1,0 +1,534 @@
+{% extends 'layouts/courses' %}
+
+{% block content %}
+
+<!-- COURSE MAIN HEADING  -->
+<section class="container">
+    <div class="cdpe_heading heading_visibility">
+        <div class="tiny-heading-container">
+            {# <p class="cdpe_tiny_heading">
+                Digital Payments, Data and Fintech
+            </p> #}
+        </div>
+
+        <p class="cdpe-main_heading">
+            Certified Digital Payments Expert (CDPE)
+        </p>
+
+        <p class="cdpe-sub_heading">
+            We offer a wide range of educational opportunities to help you succeed in this rapidly-growing field. 
+            From payment processing to digital currency, we have a course to fit your needs. Sign up for a course today!
+        </p>
+    </div>
+</section>
+
+<section class="container">
+    <div class="course-details-flex">
+
+        <!-- COURSE TABLE OF CONTENT -->
+        <div class="course-contents">
+            <p class="course-contents_heading">
+                Certified Digital Payments Expert
+            </p>
+
+            <p class="course-content-item up-pad">
+                About The Course
+            </p>
+
+            <p class="course-content-item">
+              <a href="#whom"> Who is The Course For</a>
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-content">Course Content</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-details">Course Details</a> 
+            </p>
+
+            <p class="course-content-item">
+               <a href="#to-perks">Course Perks</a> 
+            </p>
+            <button class="register-btn" onclick ="openForm()">
+                Register Now
+            </button>
+
+                <!-- POPUP form -->
+                <div class="loginPopup">
+                    <div class="formPopup" id="popupForm" style="display: none;">
+                    <form action="" class="formContainer" id="popForm" method="post">
+                    <button type="button" class="apple-store btn cancel" onclick="closeForm()">x</button>
+                    <h2 class="pop-heading">Course Registration</h2>
+                    <div class="form-group">
+                        <span class="input_placeholder">First Name <span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="firstName" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Last Name<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="lastName" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Email Address<span class="required_symbol"></span></span>
+                            <input type="text" class="form-control" id="email" name="name" required/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Phone Number <span class="optional"></span></span>
+                            <input class="form-control tel" id="phoneNumber" type="number" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Gender <span class="optional"></span></span>
+                            <input class="form-control tel" type="text" id="gender" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <span class="input_placeholder">Employment Status <span class="optional"></span></span>
+                            <select name="Employment status" id="employmentStatus" class="form-control" required>
+                                <option value="">Select</option>
+                                <option value="Employed">Employed</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Self-employed">Self-employed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Industry <span class="optional"></span></span>
+                            <input class="form-control tel" id="industry" type="text" value=""/>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input_placeholder">Course title <span class="optional"></span></span>
+                            <input class="form-control c-title" id="courseTitle" type="text" value="Certified Digital Payments Expert" readonly/>
+                        </div>
+                    
+                        <button type="submit" class="contact-form-btn form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+        <!-- ABOUT THE COURSE -->
+        <div class="course-main-details">
+            <div class="about-course-text">
+              <p class="about-course-heading">
+                    About this Course
+                </p>
+
+                <p class="about-course-paragraph">
+                    The Certified Digital Payments Expert program presents best practices in the 
+                    payments industry, providing knowledge on major concepts and players, key 
+                    technologies and channels, current day payment technology platforms and 
+                    processing and securitization of payment transactions
+                </p>
+
+
+                <p class="about-course-paragraph">
+                    Today, knowledge on digital payments, its technologies and operations provide immediate insight into consumer patterns and experience, 
+                    speeding your ability to come up with the right strategy required to make the precise decisions, 
+                    define appropriate digital product enhancements and stay ahead of competition.
+                </p>
+
+                <p class="about-course-paragraph">
+                    In this course, you will have the opportunity to learn everything on digital payments from industry and subject matter experts.
+                    This course covers the fundamentals payment architecture, platform, their operations, switching and communications protocols used for recognizing transactions, 
+                    and how the worlds of FinTech and new technologies such as Tokenization and Blockchain provides a new outlook in payments
+                </p>
+            </div>
+
+            <!-- WHO THE COURSE IS FOR -->
+            <div class="about-course-text" id="whom">
+                <p class="about-course-heading">
+                    Who is the Course for
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Anybody needing a deep dive into Payments, Operations and EMV.
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Business, IT, Engineering and Technical Departments
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Operations Executives.
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Developers and Manufacturers of Cards, Terminals and Payment Systems
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Product Development and Product Marketing Executives
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Anybody needing a deep dive into the upcoming standards for further Security
+                    </li>
+                </ul>
+            </div>
+
+
+            
+
+           <!-- COURSE CONTENT -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-content">
+                    Course Content
+                </p>
+
+                <div class="accordion-body">
+                    <div class="accordion">
+                        <!-- Day 1 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Day 1: Payments Masterclass
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Introduction to Payment
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Payment concepts
+                                </li>
+        
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Traditional and new payment methods
+                                </li>
+        
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Key players in the Payments ecosystem
+                                </li>
+        
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Payment Platforms & Architecture
+                                </li>
+        
+                                <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Practical Case Study
+                                </li>
+        
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Assessment
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Day 2: EMV Basics, Payment Card Networks & Operations
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                        <ul class="about-course-list list-alt-pad">
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              EMV Chip Technology
+                            </li>
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              EMV Terms and concepts
+                            </li>
+        
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              EMVCo Standards & Specifications
+                            </li>
+        
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Switching and Communications Protocols
+                            </li>
+        
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Transaction Integrity
+                            </li>
+        
+                            <li class="about-course-list-child child-pad">
+                              <i class="bi bi-circle"></i>
+                              Practical Case Study
+                            </li>
+        
+                            <li class="about-course-list-child child-pad">
+                                <i class="bi bi-circle"></i>
+                                Assessment
+                              </li>
+                        </ul>
+                        </div>
+                      </div>
+
+                      <!-- Day 3 & 4 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Day 3 & 4: Achieving Back Office Excellence in Digital Payments
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  EFT Overview
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Card Scheme Operations
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Card Production & Card Mgt
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Transaction Settlement
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Transaction Reporting
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Responsibilities at Reconciliation
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Settlement Bank vs Settlement Report
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Settlement Report vs Transaction Details
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Transaction Details vs Internal Account
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Interswitch Network Dispute Management
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Card Holder Disputes and Chargebacks
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Arbitration
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Complaint Handling via the Help Portal
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Practical Case Study
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Assessment
+                                </li>
+                            </ul> 
+                        </div>
+                      </div>
+
+                      <!-- Day 5 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Day 5: Fraud Detection & Prevention in Electronic Payments
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Detecting Fraud in payments, Security technologies
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Card Present Fraud Types
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Investigating Card Present Fraud transactions
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Practical Case Study
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                  <i class="bi bi-circle"></i>
+                                  Assessment
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <!-- Day 6 -->
+                      <div class="drop-container">
+                        <div class="label">
+                            <p class="course-contents_heading days-flex">
+                                Day 6: Payments Security
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <ul class="about-course-list list-alt-pad">
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Security technologies
+                                </li>
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Payments Network Security Components
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Security and Key Management
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Malware Management
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Payments Network Security Best Practices
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Practical Case Study
+                                </li>
+            
+                                <li class="about-course-list-child child-pad">
+                                    <i class="bi bi-circle"></i>
+                                    Assessment
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+
+               
+                    </div>
+                    </div>
+
+
+                <!-- Day 6
+              
+
+                -->
+            </div>
+
+
+            <!-- Course Details -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-details">
+                    Course Details
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        FEES: N200,000 per participant.
+                    </li>
+                    <!-- <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        DATE: 28th March - 1st April 2022 | 20th - 24th June 2022 | 26th - 30th Sept 2022 | 5th - 9th Dec 2022
+                    </li> -->
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        MODE OF DELIVERY: Virtual 
+                    </li>
+<!-- 
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        LOCATION: Building 7a, Oko Awo Close, Victoria Island, Lagos
+                    </li> -->
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        TIME: 9:00am - 2:00pm
+                    </li>
+
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        DURATION: 5 days
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--   Course Perks -->
+            <div class="about-course-text">
+                <p class="about-course-heading" id="to-perks">
+                    Course Perks
+                </p>
+
+                <ul class="about-course-list">
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Attendee workbook
+                    </li>
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Hands-on experience with examples and case studies
+                    </li>
+
+                    <li class="about-course-list-child">
+                        <i class="bi bi-check-lg"></i> 
+                        Digital Badge upon completion
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+   <!-- DIGITAL COMPANIES SECTION-->
+       {% include 'layouts/bank_logos' %}
+       {% include 'layouts/footer1' %}
+    
+
+
+  {% endblock %}
